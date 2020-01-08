@@ -1,0 +1,5 @@
+#12) Find the IP taht was assigned to you by dhcp server
+
+#DHCP: Dynamic Host Configuration Protocoal. When your machine is connected to the internet, it automatically provides and assigns a IP address.
+
+ipconfig getifaddr en0

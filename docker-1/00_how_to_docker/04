@@ -1,0 +1,15 @@
+# 04) Get the `hello-word` container from the Docker Hub, where it's available.
+
+# Getting an image from Docker Hub
+# Docker Hub is the place where open Docker images are stored.
+# What is image?: A Docker image is a file, comprised of multiple layers, used to execute code in a Docker container. When the Docker user runs an image, it becomes one or multiple instances of that container.
+
+# An image is bascially an immutable template for creating a container.
+# Docker Image is you get when you build docker file.
+# Docker Container is you get when you runyour Docker image.
+# We can get Docker image from docker hub by pulling an then run it to get container.
+
+docker pull hello-world
+
+# To check image:
+# docker image ls

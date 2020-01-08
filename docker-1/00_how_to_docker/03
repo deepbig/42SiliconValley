@@ -1,0 +1,13 @@
+# 03) Define the variables needed by your virtual machine `Char` in the genera; env of your terminal, so that you can run the `docker ps` command without errors. You have to fix all four environment variables with one command, and you are not allowed to use your shell's builtin to set these variables by hand.
+
+# docker-machine env: set environment variables to dictate that `docker` should run a command agianst particular machine.
+# eval: execute arguments as a shell command.
+
+eval $(docker-machine env Char)
+
+#To check the result:
+# env | grep DOCKER
+
+#To unset the env variables:
+# eval $(docker-machine env -u)
+#https://docs.docker.com/machine/reference/env/

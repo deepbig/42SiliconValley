@@ -1,0 +1,6 @@
+# 3) Identify the MAC address of the Blutooth PAN (personal area network).
+# To check the list of all hardware ports.
+
+# networksetup -listallhardwareports
+
+networksetup -getmacaddress 'Bluetooth PAN' | awk '{print $3}'

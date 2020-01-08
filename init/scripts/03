@@ -1,0 +1,13 @@
+# 3) Three's a Charm. Write a script of you choice.
+
+echo "What is your name?"
+read name
+echo "Hi $name! Thank you so much for your eval! Did you like my code? [Yes/No]"
+read yn
+if [ "$yn" = "Yes" ] ; then
+echo "Thank you $name! I was happy to meet you!:)"
+elif [ "$yn" = "No" ] ; then
+echo "Why... So said...;(";
+else
+	echo "I don't understand what you type, but... Thanks! Have a good day!"
+fi

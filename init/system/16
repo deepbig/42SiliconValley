@@ -1,0 +1,7 @@
+# 16) Find the service which makes it possiible to run specific tasks following a regular schedule.
+
+# cron : cron is a system service that runs in the backgroud, checks for scheduled tasks, and executes them if it finds any.
+# "crontabs" are like your computer's calendar
+# you can use commnad crontab -e to edit the crontabs and add a scheduled task.
+
+cron

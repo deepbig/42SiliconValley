@@ -1,0 +1,15 @@
+# 01) Create a virtual machine with `docker-machine` using the `virtualbox` driver, and named `Char`.
+
+# First, the difference between Docker Engine and Docker Machine.
+# 1) Docker Engine: the client-server application, a REST API that specifies interfaces for interacting with the Docker daemon. It accepts `docker` commands (docker run <image>, docker ps, docker image ls, and so on)
+# 2) Docker Machine: a tool for provisioning and managing your Dockerized hosts. It installed in local system, and use `docker-machine` commands. You can use Machine to install Docker Engine on one or more virtual systems. 
+
+# docker-machine create
+# --driver: `create` reqires `--driver` flag to indicate which provider(VirtualBox, DigitalOcean, AWS, etc) the machine should be created on, and an argument to indicate the name of the created machine. 
+
+docker-machine create --driver virtualbox Char
+
+# To check the result:
+# docker-machine ls
+
+# https://docs.docker.com/machine/reference/create/

@@ -1,0 +1,6 @@
+#13) Thanks to the previous question and the reverse DNS find the name of your host
+
+#nslookup 10.112.7.41 | grep name | awk '{print $3}'
+
+#command output (this will differ based on my seat):
+e1z2r7p41.42.us.org

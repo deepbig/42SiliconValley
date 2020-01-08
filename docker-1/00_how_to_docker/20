@@ -1,0 +1,15 @@
+# 20) Create a local swarm, the `Char` virtual machine should be its manager.
+
+# Create a swarm:
+# 	1) open a terminal and ssh into the machine where you want to run your manager node.
+# 	$ docker-machine ssh manager1
+#	2) Run the following command to create a new swarm.
+#	$ docker swarm init --advertise-addr <MANAGER-IP>
+
+# https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+
+# to test:
+# docker info
+# docker node ls
+
+docker swarm init --advertise-addr $(docker-machine ip Char)

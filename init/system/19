@@ -1,0 +1,7 @@
+# 19) List all services which are stared at boot time and name this kind of services.
+
+# list-units: List units that systemd currently has in memory.
+# This includes units that are either referenced directly or through a dependency, units that are pinned by applications programmatically, or units that were active in the past and have failed.
+# The units that are shown are additionally filtered by --type= and --state= if those options are specified.
+
+systemctl list-units --type=service

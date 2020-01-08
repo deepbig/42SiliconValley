@@ -1,0 +1,11 @@
+#10) Identify the network devices between your computer and the slash16.org domain.
+
+#internet is connected through gateways
+#traceroute is a function which traces the path from one network to another.
+# Traceroute is a command which can show you the path a packet of information takes from your computer to one you specify. t will list all the routers it passes through until it reaches its destination, or fails to and is discarded.
+
+#long answer: this will show all address.
+#traceroute slash16.org
+
+#short answer: the instruction says to use: 99.84.231.195
+traceroute 99.84.231.195

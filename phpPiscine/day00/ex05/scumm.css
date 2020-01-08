@@ -1,0 +1,188 @@
+* {
+    width:100%;
+  }
+
+  body {
+    background-color: rgb(100, 100, 100);
+  }
+  
+  .top_block, .left_block, .right_block, .middle_block, .bottom_block {
+    background-color: rgb(144, 144, 144);
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+  }
+/*top block*/
+  .top_block {
+    width: 74%;
+    margin: auto;
+    padding: 1%;
+    position: relative;
+  }
+  .top_right {
+    height: auto;
+    float: right;
+    width: 10%;
+  }
+  #reload {
+    width: 20%;
+    display: block;
+    margin-left: 90%;
+    z-index: 1;
+  }
+  #close {
+    width: 20%;
+    display: block;
+    margin-top: 60%;
+    margin-left: 90%;
+  }
+  #logo_42 {
+    display: inline-block;
+    width: 35%;
+  }
+  #loupe {
+    width: 20%;
+    margin-left: 39%;
+    position: absolute;
+  }
+
+  /*middle parts*/
+  .middle {
+    display: inline-block;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+  
+  .middle_block {
+    text-align: center;
+    width: 69%;
+    height: auto;
+    padding: 1%;
+    float: left;
+    margin-left: 3%;
+    z-index: 1;
+  }
+  #cluster {
+    width: 100%;
+    display: block;
+    margin: auto;
+    z-index: 2;
+    height: 100%;
+  }
+  #apple {
+    /* background-color: red; */
+    width: 34%;
+    height: 9vw;
+    float: right;
+    margin-top: -24%;
+    margin-right: 7%;
+    position: relative;
+  }
+  #ikea {
+    /* background-color: blue; */
+    width: 12%;
+    height: 9vw;
+    float: right;
+    margin-top: -24%;
+    margin-right: 55%;
+    position: relative;
+  }
+  #bubble {
+    width: 34%;
+    height: 9vw;
+    float: right;
+    margin-top: -50%;
+    margin-right: 20%;
+    position: relative;
+  }
+  .bubble_txt {
+    position: absolute;
+    width: 14vw;
+    height: auto;
+    margin-top: -24%;
+    margin-left: 22%;
+    font-size: 1.5vw;
+  }
+  
+  .left_block{
+    display: block;
+    width: 10%;
+    height: auto;
+    padding: 1%;
+    float: left;
+    padding-bottom: 2%;
+  }
+
+  .right_block {
+    display: block;
+    width: 10%;
+    height: auto;
+    padding: 1%;
+    float: right;
+    margin-left: 1%;
+    padding-bottom: 13%;
+  }
+  #towel {
+    display:block;
+      width:20%;
+      margin:auto;
+      margin-top:10%;
+}
+#book {
+    display:block;
+      width:20%;
+      margin:auto;
+      margin-top:10%;
+}
+.brick {
+  display: block;
+  width: 27%;
+  visibility: hidden;
+}
+#bricks {
+  display: block;
+  background : url("resources/brick.jpg");
+  background-size: 27%;
+}
+#Advance, #Take, #Look, #Use, #Speak, #book, #towel {
+  display:block;
+  width:55%;
+  margin:auto;
+  margin-top:10%;
+}
+.border {
+  border: 3px solid red;
+}
+/* bottom block! */
+.bottom_block {
+  background-color: rgb(141, 253, 141);
+  z-index: 1;
+  display: inline-block;
+  width: 29%;
+  height: 7vw;
+  margin-top: -3%;
+  margin-left: 11%;
+}
+#textbox {
+  margin: 2%;
+  width: 57%;
+  display: inline-block;
+}
+#button {
+  width: 28%;
+  font-size: 1vw;
+  display: inline-block;
+}
+p {
+  margin: 0;
+  padding: 1%;
+  font-size: 1vw;
+  font-family: "Times New Roman", Times, sans-serif;
+}
+#first_txt {
+  font-size: 2vw;
+}
+#second_txt {
+  text-shadow: 2px 3px 3px red;
+}

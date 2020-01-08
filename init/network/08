@@ -1,0 +1,12 @@
+#8) Find the provider of slash16.org
+
+#short answer
+whois 13.35.127.184 | grep OrgName | awk -F 'OrgName:        ' '{print $2}'
+
+#entire answer
+
+#IPs=(`dig +short slash16.org`)
+#for IP in "${IPs[@]}";
+#do
+#	whois $IP | grep OrgName | awk -F 'OrgName:        ' '{print $2}'
+#done

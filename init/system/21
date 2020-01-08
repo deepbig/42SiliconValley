@@ -1,0 +1,8 @@
+# 21) List all real users on the VM.
+
+# all human users' directory starts from home.
+
+cat /etc/passwd | grep /home/ | awk -F : '{print $1}'
+
+#easy answer:
+#ls /home 

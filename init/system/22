@@ -1,0 +1,7 @@
+# 22) Find the command that add a new local user.
+
+# adduser [new_user_name]
+# userdel [user_name]
+# test with sh 21
+
+adduser [NEW_USER_NAME]

@@ -1,0 +1,9 @@
+# 23) Explain how connect yourself as new user. (With graphic session and ssh session).
+
+Graphical: 1) adduser with root user.
+		2) follow the instruction.
+		3) When OS is  booted and asked, put your login and password.
+ssh: 1) using root user,
+	2) create ssh server (if it was not installed yet)
+	3) create authorized_keys
+	4) type ssh user@ip then follow instruction.

@@ -1,0 +1,9 @@
+# 16) Look up the `spawning-pool` container's logs in real time without running its shell.
+
+# To view the logs of a Docker container in real time, use the following command:
+# 	docker logs -f <container>
+#	the -f or --follow option will show live log output.
+
+# https://success.docker.com/article/view-realtime-container-logging
+
+docker logs -f spawning-pool

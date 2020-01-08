@@ -1,0 +1,8 @@
+# 24) Find the command that list all packages.
+
+# apt : annotation processing tool, includes  a  set  of  new
+       reflective APIs and supporting infrastructure to process program anno-
+       tations.
+# list : list packages based on package names
+
+apt list --installed

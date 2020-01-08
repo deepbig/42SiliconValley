@@ -1,0 +1,9 @@
+#11) Use the output of the previous command to find the name and IP address of the device that makes the link between you (local network) and the outside world
+
+#NAT: Network Address Translation enables private IP networks that use unregistered IP addresses to connect to the Internet. private IP address => public IP address.
+
+#previous command:
+#traceroute slash16.org | grep nat | awk '{print $2 $3}'
+
+#short result (ex: local network):
+traceroute 8.8.8.8 | grep nat | awk '{print $2 $3}' 

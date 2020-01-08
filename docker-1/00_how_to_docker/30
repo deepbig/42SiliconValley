@@ -1,0 +1,11 @@
+# 30) Increase the number of copies of the `marines` service up to twenty, because there's never enough Marines to eliminate Zergs. (Remember to take a look at the tasks and logs of the service, you'll see, it's fun.)
+
+# docker service:
+# 	scale: scale one or multiple replicated services.
+#	docker service scale SERVICE=REPLICAS [SERVICE=REPLICAS...]
+#	--detach, -d: Exit immediately instead of waiting for the service to converge.
+
+docker service scale -d marines=20
+
+# to check the log:
+# docker service logs -f $(docker service ps marines -f "name=marines.11" -q)

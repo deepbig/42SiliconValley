@@ -1,0 +1,5 @@
+# 1) In what file can you find the installed version of your Debian
+
+# /etc is the system configuration folder containing system related information.
+# expected result: 10.1
+/etc/debian_version

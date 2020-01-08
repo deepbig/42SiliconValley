@@ -1,0 +1,15 @@
+# 2) Write a script which delete an ACTIVE user on the VM.
+
+# first, add user using 22
+# if you made an user named "test"
+# switch user using command: su - test
+
+# you can check your username by typing: echo "$USER"
+# userdel $USER
+
+# reference:
+#https://www.cyberciti.biz/faq/linux-remove-user-command/
+
+echo "delete user:"
+read username
+deluser $username

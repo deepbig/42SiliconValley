@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calc-Calc</title>
+        <style>
+        </style>
+        <script>
+            var calc;
+            var first_nb;
+            var operator;
+            var second_nb;
+
+            window.onload = function() {
+                calc = document.querySelector("#calc");
+                first_nb = document.querySelector("#first");
+                operator = document.querySelector("#operator");
+                second_nb = document.querySelector("#second");
+                calc.addEventListener("submit", calcuate);
+                setInterval("alert('Please, use me...')", 30000);
+            }
+
+            function calcuate(event) {
+                event.preventDefault();
+                var first = parseInt(first_nb.value, 10);
+                var second = parseInt(second_nb.value, 10);
+                if (isNaN(first) || isNaN(second) || first < 0 || second < 0) {
+                    alert("Error :(");
+                    return ;
+                }
+                switch (operator.value) {
+                    case "+":
+                        print(first + second);
+                        break ;
+                    case "-":
+                        print(first - second);
+                        break ;
+                    case "*":
+                        print(first * second);
+                        break ;
+                    case "/":
+                        if (second == 0)
+                            print("It's over 9000!");
+                        else
+                            print(first / second);
+                        
+                        break ;
+                    case "%":
+                        if (second == 0)
+                            print("It's over 9000!");
+                        else
+                            print(first % second);
+                        break ;
+                    default:
+                        return "This should not happened...";
+                        break ;
+
+                }
+            }
+            function print(value) {
+                console.log(value);
+                alert(value);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="block">
+            <div class="content">
+                <h1>(ಥ﹏ಥ) Cal-Cal (ಥ﹏ಥ)</h1>
+                <form action="#" id="calc">
+                    <input type="text" id="first">
+                    <select name="operator" id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                    <input type="text" id="second">
+                    <input type="submit" id="submit" value="Try me!">
+                </form>
+
+
+            </div>
+
+        </div>
+    </body>
+
+</html>

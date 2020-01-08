@@ -1,0 +1,7 @@
+# 12) Figure out the exact size of each folder of /var in a humanly understandable way followed by the path of it.
+
+#du : "disk usage."
+#-s : --summarize -- Display only a total for each argument.
+#-h : --human-readable --Print sizes in human readable format.
+
+du -sh /var/*

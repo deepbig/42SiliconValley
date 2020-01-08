@@ -1,0 +1,11 @@
+# 08) Launch a shell from an `alpine` container, and make sure that you can interact directly with the continer via your terminal, and that the container via your ternimal, and that the container deletes itself once the shell's execution is done.
+
+#docker run --help:
+# -i, --interactive : keep STDIN open even if not attached.
+# -t, --tty : Allocate a pseudo-TTY (use -t, usually in the combination -it and you have a terminal driver added, which if you are interacting with the process is likely what you want. It basically makes the container start look like a terminal connection session.
+# https://stackoverflow.com/questions/30137135/confused-about-docker-t-option-to-allocate-a-pseudo-tty
+# --rm : Automatically remove the container when it exits.
+
+docker run -it --rm alpine /bin/sh
+
+

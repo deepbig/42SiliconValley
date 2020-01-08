@@ -1,0 +1,7 @@
+# 10) NAme the command that lists the partition tables of drives?
+
+# fdisk -l: fdisk stands for format-disk or Fixed-disk its' used to create or delete bard disk partitions. if you use the -l option it shows the partition table
+
+# it should run with root user. It does not work with normal user.
+
+fdisk -l

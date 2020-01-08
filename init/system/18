@@ -1,0 +1,7 @@
+# 18) Find the command that kills ssh service
+
+#service ssh stop
+#somehow this does not work...
+
+#alternative:
+systemctl stop ssh

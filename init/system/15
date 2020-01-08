@@ -1,0 +1,7 @@
+# 15) Find the command that kills the backgroud command's process
+
+# kill [PID] : find PID and use it for the killing process...
+# easy answer:
+# pkill tail : tail is just a full name or partial name.
+
+pkill tail

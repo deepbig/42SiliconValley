@@ -1,0 +1,10 @@
+# 2) Identify and display the Ethernet interface characteristics:
+#  a) Identify broadcast address: A broadcast address is a network address at which all devices connected to a multiple-access communications network are enabled to receive datagrams.
+
+#ifconfig en0 | grep 'inet ' | awk '{print $2}'
+ipconfig getifaddr en0
+
+#  b) Identify all IP addresses which are part of the same subnet
+
+#ping 10.112.255.255
+arp -a

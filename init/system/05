@@ -1,0 +1,6 @@
+# 5) NAme the command that determines the state of the SSH service.
+
+# first, you need to install SSH server. Type: apt-get install openssh-server
+
+#systemctl status ssh
+service ssh status

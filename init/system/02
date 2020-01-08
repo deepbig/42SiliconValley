@@ -1,0 +1,7 @@
+# 2) What command can you use to rename your system?
+# first, you need to get access to root user.
+# To do so, type: su -
+# type password of root user
+# type: hostname with new_name as you want to rename.
+
+hostname new_name

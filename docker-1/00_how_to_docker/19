@@ -1,0 +1,38 @@
+# 19) Launch a container name `Abathur`. It will be a `Python` container. 
+#	2-slim version, its /root folder will be bound to a HOME folder on your host,
+#	and its 3000 port will be bound to the 3000 port of your virtual machine.
+#	You will personalize this container so that you can use the `Flash` micro-framework in its latest version.
+#	You will make sure that an html page displaying "Hello World" with <h1> tags can be served by `Flask`.
+#	You will test that your container is properly set up by accessing, via curl or a web browser, the IP address of your virtual machine on the 3000 port.
+#	You wil also list all the neccessary commands in your repository.
+
+# docker exec: this command runs a new command in a running container.
+#	--env, -e: set environment variable.
+#	-v, --volume: -v flag mounts the current working directory into the container. current-working-dir:container
+
+# A minimal application of Flask
+#	from flask import Flask
+#	app = Flask(__name__)
+#	@app.route('/')
+#	def hello_world():
+#		return 'Hellow, World!'
+
+# To run the application, you can either use the flask command or python's -m switch with Flash.
+# Before you can do that, you need to tell your terminal the application to work with by exporting the `FLASK_APP` environment variable:
+#	$ export FLASK_APP=hello.py
+#	$ flask run
+
+docker run --name Abathur -v ~/:/root -p 3000:3000 -dit python:2-slim
+docker exec Abathur pip install Flask
+echo 'from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello, World!</h1>"' > ~/app.py
+docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
+
+#docker run -t --name Abathur -v ~/Abathur:/root -p 3000:3000 -d python:2-slim
+#docker exec Abathur pip install --upgrade pip
+#docker exec Abathur pip install flask
+#docker exec --env FLASK_APP=/root/hello.py Abathur flask run --host=0.0.0.0 --port=3000
+
+# How to check result:
+#	curl $(docker-machine ip Char):3000
+
+

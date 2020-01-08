@@ -1,0 +1,8 @@
+#14) Run the 'tail -f /var/log/syslog' command in backgroud
+
+# Running Bash Commands in the Background the Right Way [Linux]:
+# command & 
+
+# to check what's running, use: ps aux
+
+tail -f /var/log/syslog & 

@@ -1,0 +1,13 @@
+# 24) Launch a `rabbitmq` SERVICE that will be named `orbital-command`. You should define a specific user and password for the RabbitMQ service, they can be whatever you want. This service will be on the `overmind` network.
+
+# To deploy an application image when Docker Engine is in swarm mode, you create a service.
+# Frequently a service is the image for a microservice within the context of some large application.
+# ex) HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment.
+
+# When you create a service, you specify which container image touse and wich commands to execute inside running containers.
+
+# library/rabbitmq (https://hub.docker.com/_/rabbitmq/)
+# setting default user and password (guest / guest)
+# docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+
+docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq

@@ -1,0 +1,8 @@
+# 7) Figure out the PID of the SSHD service. (SSHD is the OpenSSH server process. It is the daemon that is running and alllows others to connect to the machine - the server, while SSH is the command you use to connect to remote machines - the client.
+
+# PID : the process ID of the process.
+
+#short answer:
+#cat /var/run/sshd.pid
+
+service ssh status | grep PID | awk '{print $3}'

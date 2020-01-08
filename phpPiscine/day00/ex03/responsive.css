@@ -1,0 +1,73 @@
+
+    body {
+        background-color: black;
+    }
+    h1, p {
+        color: white;
+        text-align: center;
+    }
+    .mend_pic img {
+        padding-top: 10px;
+        width: 30%;
+        height: 30%;
+    }
+    .mend_pic p {
+        color: white;
+    }
+    table {
+        width: 100%;
+    }
+    .underTable {
+        padding: 70px;
+
+    }
+    .name {
+        font-size: 2vw;
+    }
+    td {
+        width: 5%;
+    }
+    p {
+        margin: 0;
+    }
+    .name {
+        font-weight: bold;
+    }
+    .number {
+        text-align: left;
+        font-size: 1vw;
+    }
+    .weight {
+        text-align: right;
+        font-size: 1vw;
+    }
+    .color_1 {
+        background-color: skyblue;
+    }
+    .color_2 {
+        background-color: purple;
+    }
+    .color_3 {
+        background-color: red;
+    }
+    .color_4 {
+        background-color: orange;
+    }
+    .color_5 {
+        background-color: rgb(101, 190, 143);
+    }
+    .color_6 {
+        background-color: orchid;
+    }
+    .color_7 {
+        background-color: green;
+    }
+    .color_8 {
+        background-color: rgb(211, 211, 8);
+    }
+    .color_9 {
+        background-color: rgba(179, 62, 62, 0.548);
+    }
+    .color_10 {
+        background-color: rgb(170, 59, 59);
+    }

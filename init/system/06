@@ -1,0 +1,5 @@
+# 6) Name the command that reboots the SSH service.
+
+# test with service ssh status
+
+service ssh restart

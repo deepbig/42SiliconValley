@@ -1,0 +1,111 @@
+/* Dropdown Button */
+h1 {
+  text-align: center;
+}
+body {
+    background-color: #f1f1f1;
+    margin: 35px;
+}
+  /* Links inside the dropdown*/ 
+a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.dropdown1, .dropdown2, .dropdown3, .dropdown4 {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content1, .dropdown-content2, .dropdown-content3, .dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 23vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropbtn1, .dropbtn2, .dropbtn3, .dropbtn4 {
+  color: white;
+  padding: 16px;
+  font-size: 2vw;
+  border: none;
+  width: 23vw;
+  height: 5vw;
+}
+
+.dropbtn1 {
+    background-color: rgb(175, 76, 175);
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content1 a:hover {background-color: rgb(223, 130, 130);}
+  
+  /* Show the dropdown menu on hover*/ 
+  .dropdown1:hover .dropdown-content1 {
+      display: block;
+    }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown1:hover .dropbtn1 {
+      background-color: #747474;
+    }
+
+
+/* Second btn */
+
+.dropbtn2 {
+  background-color: rgb(112, 95, 209);
+} 
+  .dropdown-content2 a:hover {
+    background-color: rgb(215, 130, 223);
+  }
+  
+  .dropdown2:hover .dropdown-content2 {
+      display: block;
+    }
+  
+  
+  .dropdown2:hover .dropbtn2 {
+      background-color: #747474;
+    }
+
+  /* Third btn */
+
+.dropbtn3 {
+  background-color: rgb(250, 158, 37);
+}
+
+  .dropdown-content3 a:hover {
+    background-color: rgb(245, 186, 119);
+  }
+  
+  .dropdown3:hover .dropdown-content3 {
+      display: block;
+    }
+  
+  .dropdown3:hover .dropbtn3 {
+      background-color: #747474;
+    }
+
+/* Fourth btn */
+
+.dropbtn4 {
+  background-color: rgb(245, 49, 49);
+} 
+  .dropdown-content4 a:hover {
+    background-color: rgb(223, 130, 130);
+  }
+  
+  .dropdown4:hover .dropdown-content4 {
+      display: block;
+    }
+  
+  .dropdown4:hover .dropbtn4 {
+      background-color: #747474;
+    }

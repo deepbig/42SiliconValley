@@ -1,0 +1,67 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- basics.html                                        :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: hryu <marvin@42.fr>                        +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/09/05 19:46:08 by hryu              #+#    #+#            -->
+<!-- Updated: 2019/09/05 19:46:15 by hryu             ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basics</title>
+        <style>
+            body {
+                background-color: pink;
+            }
+            h1 {
+                color: white;
+                text-align: center;
+            }
+            .twoImage img {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .twoImage p {
+                text-align: center;
+            }
+            .twoImage {
+                display: flex; 
+            }
+            .twoImage .column {
+                flex: 33.33%;
+                padding: 10px;
+            }
+            p {
+                color: white;
+            }
+            footer {
+                padding-top: 40px;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>*&^%$#@! W&#245;W P&#207;NK !@#$%^&*</h1>
+        <div class="twoImage">
+            <div class="column">
+                <img src="https://cdn.pixabay.com/photo/2016/12/18/22/32/desert-1916882_1280.jpg" alt="Buy a desert">
+                <p><a href="https://www.walmart.com/c/kp/sand-bags">Buy Your Desert at Walmart</a></p>
+            </div>
+            <div class="column">
+                <img src="https://cdn.pixabay.com/photo/2019/09/04/13/06/sail-4451570_1280.jpg" alt="Buy the ocean">
+                <p><a href="https://www.amazon.com/Imagitarium-Pacific-Ocean-Water-gallons/dp/B06VSD8KFM">Buy Your Ocean at Amazon</a></p>
+            </div>
+        </div>
+        <footer>
+            <hr size="2" noshade>
+            <p style="font-family: monospace; font-style: italic; font-size: 20px">&copy; hryu 2019</p>
+
+        </footer>
+        
+    </body>
+</html>

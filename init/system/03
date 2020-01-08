@@ -1,0 +1,6 @@
+#3) What file has to be modified to make it permanent?
+
+# noticed even if I changed hostname, /etc/hostname file does not updated.
+# modify using vi /etc/hostname and restart the system.
+
+/etc/hostname

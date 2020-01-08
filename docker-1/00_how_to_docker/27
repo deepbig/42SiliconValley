@@ -1,0 +1,8 @@
+# 27) Get the real-time logs of one the tasks of the `engineering-bay` service.
+
+# docker service ps:
+#	docker service ps -f "name=redis.1" redis
+
+# you can check the log file base on docker-machine
+
+docker service logs -f $(docker service ps engineering-bay -f "name=engineering-bay.1" -q)

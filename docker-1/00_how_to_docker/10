@@ -1,0 +1,7 @@
+# 10) Create a volume named `hatchery`.
+
+# docker volume:
+# 	A volume is a persistent data stored in /var/lib/docker/volumes/...
+#	Container -> bind mount -> Filesystem / Container -> volume -> Docker area in Filesystem
+
+docker volume create --name hatchery

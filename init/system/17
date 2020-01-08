@@ -1,0 +1,10 @@
+# 17) Find the command that allows you to connect via ssh on the VM.(In parallel with the graphic session)
+
+#find the IP address with ip a command
+#ssh user@ip
+
+#ssh hongsuk@10.0.2.15
+# but ip address might change.
+# therefore, i need to search the command based on the result.
+
+ssh hongsuk@ip

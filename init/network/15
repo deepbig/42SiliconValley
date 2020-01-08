@@ -1,0 +1,13 @@
+#15) Make the intra.42.fr address reroute to 46.19.122.85
+
+# You first need to vim (vim does not work because of the lack of permission) or sudo nano /etc/hosts file.
+# add the line: 46.19.122.85 intra.42.fr
+# expected result would be:
+#       127.0.0.1       localhost
+#       255.255.255.255 broadcasthost
+#       ::1             localhost
+#
+#       #10.51.1.38 	cdn.intra.42.fr
+#       45.19.122.85	intra.42.fr
+
+sudo nano /etc/hosts
